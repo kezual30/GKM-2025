@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan Rahasia</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .popup {
+      display: none;
+      background-color: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      max-width: 100%;
+      width: 90%;
+      box-sizing: border-box;
+      text-align: center;
+    }
+
+    button {
+      padding: 12px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    a {
+      color: #007bff;
+      font-weight: bold;
+      word-break: break-word;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>📩 Undangan Khusus</h2>
+  <p>Klik tombol di bawah untuk melihat isi pesannya.</p>
+  <button onclick="showPopup()">Buka Pesan</button>
+
+  <div class="popup" id="popup">
+    <h3>🎉 Selamat!</h3>
+    <p>Anda terpilih menjadi <strong>Top Manajer GKM 2025</strong></p>
+    <p>📅 Rabu, 28 Mei 2025<br>🕘 Pukul 09:00 WIB</p>
+    <p>🎥 Link Google Meet:</p>
+    <p><a href="https://meet.google.com/abc-defg-hij" target="_blank">https://meet.google.com/abc-defg-hij</a></p>
+  </div>
+
+  <script>
+    function showPopup() {
+      document.getElementById('popup').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
